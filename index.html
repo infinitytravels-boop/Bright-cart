@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Discover useful finds across tech, fashion, home, beauty and more at BrightCart.">
+<meta name="theme-color" content="#101827">
+<title>BrightCart — Discover your next great find</title>
+<style>
+:root{--ink:#172033;--muted:#687386;--navy:#101827;--blue:#3567e8;--pale:#f4f6fa;--line:#e6eaf0}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#fff}
+.top{background:var(--navy);color:#fff;text-align:center;padding:9px 14px;font-size:12px;letter-spacing:.3px}
+header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}
+.bar{max-width:1180px;margin:auto;padding:16px 20px;display:flex;align-items:center;gap:22px}
+.logo{font-size:25px;font-weight:800;letter-spacing:-1px;color:var(--navy);white-space:nowrap}.logo span{color:var(--blue)}
+.search{flex:1;display:flex;background:var(--pale);border:1px solid var(--line);border-radius:9px;overflow:hidden}
+.search input{border:0;background:transparent;padding:13px 14px;outline:0;min-width:0;flex:1;font-size:14px}
+.search button{border:0;background:var(--blue);color:#fff;padding:0 18px;font-weight:700}
+nav{max-width:1180px;margin:auto;padding:0 20px 13px;display:flex;gap:22px;overflow:auto;white-space:nowrap}
+nav a{font-size:13px;color:#465166;text-decoration:none;font-weight:600}
+main{max-width:1180px;margin:auto;padding:28px 20px 60px}
+.hero{background:linear-gradient(120deg,#111d33,#244c9e);border-radius:18px;padding:48px 42px;color:white;display:flex;align-items:center;justify-content:space-between;gap:25px;min-height:260px}
+.hero h1{font-size:clamp(30px,5vw,48px);line-height:1.05;letter-spacing:-1.5px;margin:0 0 14px;max-width:560px}
+.hero p{color:#dbe5ff;line-height:1.6;max-width:500px;margin:0 0 22px}
+.btn{display:inline-block;background:#fff;color:#17346f;text-decoration:none;font-weight:700;padding:12px 18px;border-radius:8px;font-size:14px}
+.hero-mark{font-size:90px;opacity:.9}
+.section-head{display:flex;justify-content:space-between;align-items:end;margin:36px 0 16px;gap:15px}
+h2{font-size:23px;margin:0;letter-spacing:-.5px}.section-head p{margin:5px 0 0;color:var(--muted);font-size:13px}
+.categories{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}
+.cat{background:var(--pale);border:1px solid var(--line);border-radius:12px;padding:18px 10px;text-align:center;text-decoration:none;color:var(--ink);font-size:13px;font-weight:700}
+.cat b{display:block;font-size:27px;margin-bottom:8px}
+.products{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}
+.card{border:1px solid var(--line);border-radius:13px;padding:17px;display:flex;flex-direction:column;min-height:220px}
+.art{height:100px;border-radius:9px;background:var(--pale);display:grid;place-items:center;font-size:43px;margin-bottom:13px}
+.card h3{font-size:15px;margin:0 0 7px}.card p{font-size:12px;line-height:1.5;color:var(--muted);margin:0 0 14px;flex:1}
+.card a{display:block;text-align:center;background:var(--blue);color:white;text-decoration:none;padding:10px;border-radius:7px;font-size:13px;font-weight:700}
+.note{margin-top:34px;padding:18px;background:#f8f9fc;border:1px solid var(--line);border-radius:10px;color:#5b6576;font-size:12px;line-height:1.6}
+footer{background:var(--navy);color:#d6ddec;padding:28px 20px;text-align:center;font-size:12px;line-height:1.8}
+footer a{color:#fff}
+@media(max-width:760px){.bar{gap:12px;flex-wrap:wrap}.logo{font-size:23px}.search{order:2;flex-basis:100%}.hero{padding:34px 24px}.hero-mark{font-size:60px}.categories{grid-template-columns:repeat(3,1fr)}.products{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:420px){main{padding:20px 14px 45px}.hero{min-height:0}.hero-mark{display:none}.products{gap:10px}.card{padding:12px}.categories{gap:8px}}
+</style>
+</head>
+<body>
+<div class="top">A WORLD OF FINDS · SHOP SMART · DISCOVER MORE</div>
+<header>
+ <div class="bar">
+  <div class="logo">Bright<span>Cart</span></div>
+  <form class="search" id="searchForm"><input id="searchInput" type="search" placeholder="Search products and categories..." aria-label="Search products"><button type="submit">Search</button></form>
+ </div>
+ <nav><a href="#categories">Categories</a><a href="#featured">Featured finds</a><a href="#about">About BrightCart</a></nav>
+</header>
+<main>
+ <section class="hero">
+  <div><h1>Discover your next great find.</h1><p>Explore useful products across technology, style, home, beauty and everyday life. BrightCart helps you discover items from trusted shopping destinations.</p><a class="btn" href="#featured">Explore featured finds</a></div>
+  <div class="hero-mark" aria-hidden="true">✦</div>
+ </section>
+ <section id="categories">
+  <div class="section-head"><div><h2>Shop by category</h2><p>Find inspiration for every part of your life.</p></div></div>
+  <div class="categories">
+   <a class="cat" href="#featured" data-filter="Electronics"><b>🎧</b>Electronics</a>
+   <a class="cat" href="#featured" data-filter="Fashion"><b>👟</b>Fashion</a>
+   <a class="cat" href="#featured" data-filter="Home"><b>🏡</b>Home</a>
+   <a class="cat" href="#featured" data-filter="Beauty"><b>✨</b>Beauty</a>
+   <a class="cat" href="#featured" data-filter="Gaming"><b>🎮</b>Gaming</a>
+   <a class="cat" href="#featured" data-filter="Fitness"><b>🏃</b>Fitness</a>
+  </div>
+ </section>
+ <section id="featured">
+  <div class="section-head"><div><h2>Featured finds</h2><p>Explore popular product ideas and continue to the retailer to shop.</p></div></div>
+  <div class="products" id="productGrid">
+   <article class="card" data-category="Electronics"><div class="art">🎧</div><h3>Wireless headphones</h3><p>Explore wireless audio options for music, calls and everyday listening.</p><a target="_blank" rel="noopener" href="https://www.amazon.com/s?k=wireless+headphones">View on Amazon</a></article>
+   <article class="card" data-category="Electronics"><div class="art">⌚</div><h3>Smart watches</h3><p>Discover smart watches and fitness-focused wearable devices.</p><a target="_blank" rel="noopener" href="https://www.amazon.com/s?k=smart+watches">View on Amazon</a></article>
+   <article class="card" data-category="Fashion"><div class="art">👟</div><h3>Everyday sneakers</h3><p>Browse casual sneakers for comfort, travel and daily outfits.</p><a target="_blank" rel="noopener" href="https://www.amazon.com/s?k=everyday+sneakers">View on Amazon</a></article>
+   <article class="card" data-category="Home"><div class="art">☕</div><h3>Kitchen essentials</h3><p>Find practical kitchen tools and useful home accessories.</p><a target="_blank" rel="noopener" href="https://www.amazon.com/s?k=kitchen+essentials">View on Amazon</a></article>
+   <article class="card" data-category="Beauty"><div class="art">🧴</div><h3>Beauty essentials</h3><p>Explore skincare and personal-care product selections.</p><a target="_blank" rel="noopener" href="https://www.amazon.com/s?k=beauty+skincare+essentials">View on Amazon</a></article>
+   <article class="card" data-category="Gaming"><div class="art">🎮</div><h3>Gaming accessories</h3><p>Browse controllers, headsets and accessories for gaming setups.</p><a target="_blank" rel="noopener" href="https://www.amazon.com/s?k=gaming+accessories">View on Amazon</a></article>
+   <article class="card" data-category="Fitness"><div class="art">🏋️</div><h3>Fitness equipment</h3><p>Discover home workout equipment and training accessories.</p><a target="_blank" rel="noopener" href="https://www.amazon.com/s?k=home+fitness+equipment">View on Amazon</a></article>
+   <article class="card" data-category="Home"><div class="art">💡</div><h3>Home lighting</h3><p>Explore lighting ideas to make your spaces feel more inviting.</p><a target="_blank" rel="noopener" href="https://www.amazon.com/s?k=home+lighting">View on Amazon</a></article>
+  </div>
+ </section>
+ <section class="note" id="about"><strong>About BrightCart</strong><br>BrightCart is an independent product-discovery website. We are not Amazon and are not owned by or officially connected with Amazon. Product links currently lead to Amazon search pages. Affiliate tracking will be added only after the relevant affiliate program approves the website and provides a tracking ID. Product availability, prices, shipping and terms are set by the retailer and may change.</section>
+</main>
+<footer>© <span id="year"></span> BrightCart. All rights reserved.<br>As an Amazon Associate, we may earn from qualifying purchases. This disclosure will apply once BrightCart is approved and affiliate links are active.<br><a href="#about">Affiliate disclosure &amp; about</a></footer>
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+const input=document.getElementById('searchInput');
+const cards=[...document.querySelectorAll('.card')];
+function filter(q){const term=q.toLowerCase().trim();cards.forEach(c=>{c.style.display=(!term||c.innerText.toLowerCase().includes(term)||c.dataset.category.toLowerCase().includes(term))?'flex':'none';});}
+document.getElementById('searchForm').addEventListener('submit',e=>{e.preventDefault();filter(input.value);document.getElementById('featured').scrollIntoView({behavior:'smooth'});});
+document.querySelectorAll('[data-filter]').forEach(a=>a.addEventListener('click',()=>filter(a.dataset.filter)));
+</script>
+</body>
+</html>
